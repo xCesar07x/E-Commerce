@@ -149,8 +149,18 @@ img{
 
 .nav-logo{
   width: 50px;
-  fill: var(--title-color);
+  fill: var(--first-color);
 }
+
+.store{
+  color: var(--title-color);
+  position: absolute;
+  left: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
 /********************HOME SECTION******************************************/
 
 .title-home{
@@ -197,6 +207,10 @@ a{
   background-color: var(--text-color-light);
   color: var(--title-color);
 }
+
+
+
+/******************************************************************************************************/
 
 .icons-wrapper{
   display: flex;
@@ -290,13 +304,14 @@ section{
 
 .content-home{
   position: relative;
-  row-gap: 2.5rem;
+  row-gap: 2rem;
 }
 
-container{
+.container{
   max-width: 1024px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  row-gap: 2rem;
 }
 
 .grig{
@@ -313,11 +328,13 @@ container{
   justify-content: center;
   align-items: flex-end;
   justify-self: flex-end;
-  position: relative;
-  left: 7%;
-  top: -6%;
+  
 
 }
+
+
+
+
 
 /*********************************PRODUCTS************************************************************************/
 
@@ -474,6 +491,8 @@ ul{
 
 
 
+
+
 /********************SCROLL************************************/
 
 ::-webkit-scrollbar{
@@ -495,6 +514,37 @@ ul{
 /*********************MEDIASCREEN************************/
 
 
+
+
+@media  screen and (min-width: 576px) {
+  .img-01{
+    width: 350px;
+    top: -24%;
+    height: 600px;
+  }
+  
+}
+
+@media screen and (min-width: 767px){
+  .content-home{
+    padding-top: 6rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 5rem;
+
+  }
+
+  .img-01{
+    width: 340px;
+    height: 490px;
+  }
+
+  .home-info{
+    width: 340px;
+  }
+  
+}
+
 @media screen and (min-width: 576px) {
   #conteiner-products{
     grid-template-columns: repeat(2 , 200px);
@@ -508,5 +558,22 @@ ul{
     grid-template-columns: repeat(3, 265px);
     column-gap: 5rem;
   }
+  
+}
+
+
+@media  screen and (min-width: 576px) {
+  .conteiner-footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media  screen and (min-width: 767px) {
+  .conteiner-footer{
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+  }
+  
   
 }
